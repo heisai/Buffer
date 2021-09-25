@@ -1,3 +1,0 @@
-/root/test/MBuffer/build/CMakeFiles/rebuild_cache.dir
-/root/test/MBuffer/build/CMakeFiles/edit_cache.dir
-/root/test/MBuffer/build/CMakeFiles/buffer.dir
