@@ -1,4 +1,5 @@
 #include <iostream>
+#include<algorithm>
 #include"Buffer.h"
 using namespace std;
 
@@ -21,5 +22,7 @@ int main()
     std::cout<<"数据长度:"<<len<<std::endl;
     std::cout<<"数据:"<<(bf.ReadString(len))<<std::endl;
     std::cout<<"结束标志:"<<int(bf.ReadUint8())<<std::endl;
+    auto it = std::find(bf.begin(),bf.end(),'q');
+    std::cout<<"iter:"<<*it<<endl;
    return 0;
 }

@@ -28,6 +28,10 @@ public:
     void Reserve(size_t size);
     size_t WriteableBytes();
 
+     unsigned char *begin();
+     unsigned char *end();
+
+
 private:
     uint8_t  PeekUint8();
     uint16_t PeekUint16();
@@ -36,7 +40,7 @@ private:
     string   PeekString(size_t len);
     void Write(const void*  d, int len);
     void Read();
-    unsigned char *begin();
+
     unsigned char* WriteBegin();
     const unsigned  char * ReadBegin();
     int Capacity()const {return capacity_;}

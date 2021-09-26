@@ -190,6 +190,10 @@ unsigned char *Buffer::begin()
 {
     return buffer_;
 }
+unsigned char *Buffer::end()
+{
+    return buffer_ + Length();
+}
 
 unsigned char *Buffer::WriteBegin()
 {
